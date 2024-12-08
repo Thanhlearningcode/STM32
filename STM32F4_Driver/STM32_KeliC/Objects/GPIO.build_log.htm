@@ -1,0 +1,173 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: nguyen thanh, bachkhoa, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.31.0.0
+Toolchain Path:  D:\Keli C\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14
+Assembler:       Armasm.exe V6.14
+Linker/Locator:  ArmLink.exe V6.14
+Library Manager: ArmAr.exe V6.14
+Hex Converter:   FromElf.exe V6.14
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+D:\Target fresher Embedded\Lib_STM32F4\STM32_KeliC\GPIO.uvprojx
+Project File Date:  08/14/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14', folder: 'D:\Keli C\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+Error #603: 'Keil.MDK-Plus::File System:CORE:LFN Debug:6.13.6': component requires valid MDK-ARM Plus or MDK-ARM Professional license
+Error #603: 'Segger.MDK-Plus::Graphics:CORE:6.10.8': component requires valid MDK-ARM Plus or MDK-ARM Professional license
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: RTOS2 Version: 2.1.3
+   * Component: CORE Version: 5.4.0
+   * Component: Keil RTX5 Variant: Library Version: 5.5.2
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.ARM_Compiler.1.6.3.pack
+                Keil.ARM_Compiler.1.6.3
+                Keil ARM Compiler extensions for ARM Compiler 5 and ARM Compiler 6
+   * Component: Event Recorder Variant: DAP Version: 1.4.0
+   * Component: File Variant: File System Version: 1.2.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.MDK-Middleware.7.11.1.pack
+                Keil.MDK-Middleware.7.11.1
+                Middleware for Keil MDK-Professional and MDK-Plus
+   * Component: emWin LCD Version: 1.1.0
+   * Component: CORE Variant: LFN Debug Version: 6.13.6
+   * Component: CORE Version: 6.10.8
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil.STM32F4xx_DFP.2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: SDRAM Version: 1.0.0
+   * Component: emWin LCD Variant: RGB IF Version: 1.0.0
+   * Component: Common Version: 1.8.1
+   * Component: Cortex Version: 1.8.1
+   * Component: GPIO Version: 1.8.1
+   * Component: PWR Version: 1.8.1
+   * Component: RCC Version: 1.8.1
+   * Component: Startup Version: 2.6.3
+   * Component: 32F469IDISCOVERY Variant: RGB IF Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\CMSIS
+  .\RTE\Compiler
+  .\RTE\_Target_1
+  D:\Keli C\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  D:\Keli C\ARM\CMSIS\5.7.0\CMSIS\RTOS2\Include
+  D:\Keli C\ARM\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Include
+  D:\Keli C\Keil\ARM_Compiler\1.6.3\Include
+  D:\Keli C\Keil\MDK-Middleware\7.11.1\FileSystem\Include
+  D:\Keli C\Keil\MDK-Middleware\7.11.1\emWin\Include
+  D:\Keli C\Keil\STM32F4xx_DFP\2.17.1\Drivers\BSP\STM32469I-Discovery
+  D:\Keli C\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  D:\Keli C\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::Board Support:emWin LCD:1.1.0 (API)
+      Include file:  emWin\Include\LCD_X.h
+
+   * Component: ::CMSIS:RTOS2:2.1.3 (API)
+      Include file:  CMSIS\RTOS2\Include\cmsis_os2.h
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: ARM::CMSIS:RTOS2:Keil RTX5:Library:5.5.2
+      Source file:   CMSIS\RTOS2\RTX\Template\Thread.c
+      Source file:   CMSIS\RTOS2\RTX\Template\MemPool.c
+      Include file:  CMSIS\RTOS2\RTX\Include\rtx_os.h
+      Include file:  CMSIS\RTOS2\RTX\Config\RTX_Config.h
+      Source file:   CMSIS\RTOS2\RTX\Template\main.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Timer.c
+      Source file:   CMSIS\RTOS2\RTX\Template\svc_user.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Events.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Semaphore.c
+      Source file:   CMSIS\RTOS2\RTX\Source\rtx_lib.c
+      Source file:   CMSIS\RTOS2\RTX\Config\RTX_Config.c
+      Source file:   CMSIS\RTOS2\RTX\Template\MsgQueue.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Mutex.c
+      Library file:  CMSIS\RTOS2\RTX\Library\ARM\RTX_CM4F.lib
+
+   * Component: Keil.32F469IDISCOVERY::Board Support:Drivers:SDRAM:1.0.0
+      Include file:  Drivers\BSP\STM32469I-Discovery\stm32469i_discovery_sdram.h
+      Source file:   Drivers\BSP\STM32469I-Discovery\stm32469i_discovery_sdram.c
+
+   * Component: Keil.32F469IDISCOVERY::Board Support:emWin LCD:RGB IF:1.0.0
+      Source file:   MDK\Boards\ST\32F469IDISCOVERY\Common\LCD_X.c
+
+   * Component: Keil.ARM Compiler::Compiler:Event Recorder:DAP:1.4.0
+      Include file:  Config\EventRecorderConf.h
+      Include file:  Include\EventRecorder.h
+      Source file:   Source\EventRecorder.c
+
+   * Component: Keil.ARM Compiler::Compiler:I/O:File:File System:1.2.0
+      Source file:   Source\retarget_io.c
+
+   * Component: Keil.MDK-Plus::File System:CORE:LFN Debug:6.13.6
+      Source file:   FileSystem\Config\FS_Debug.c
+      Source file:   FileSystem\Config\FS_Config.c
+      Include file:  FileSystem\Include\rl_fs.h
+      Library file:  FileSystem\Lib\ARM\FS_Dbg_LFN_CM3_L.lib
+
+   * Component: Keil::Device:STM32Cube HAL:Common:1.8.1
+      Include file:  Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK\Device\Source\ARM\STM32F411xx_OPT.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f411xe.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+
+   * Component: Keil::Graphics Display:32F469IDISCOVERY:RGB IF:1.0.0
+      Source file:   MDK\Boards\ST\32F469IDISCOVERY\Common\LCDConf.c
+
+   * Component: Segger.MDK-Plus::Graphics:CORE:6.10.8
+      Include file:  emWin\Include\GUI.h
+      Source file:   emWin\Sample\Config\GUIConf.c
+      Source file:   emWin\Sample\Template\RTOS2\GUI_TemplateThread.c
+      Library file:  emWin\Lib\ARM\GUI_CM4F_L.lib
+      Source file:   emWin\Sample\Template\RTOS2\GUI_MultiThread.c
+      Source file:   emWin\Sample\Template\RTOS2\GUI_SingleThread.c
+      Source file:   emWin\Sample\GUI_X\GUI_X_RTE.c
+Target not created.
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
