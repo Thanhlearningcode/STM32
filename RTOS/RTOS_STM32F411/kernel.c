@@ -1,11 +1,11 @@
 /***************************************************************************
  * @file    kernel.c
- * @brief 	Dinh nghia cac h‡m va cau tru lien quan toi kernel
+ * @brief 	Dinh nghia cac h√†m va cau tru lien quan toi kernel
  * @details File nay dinh nghia cac ham cho viec dieu khien kernel
  * @version 1.0
  * @date    2024-10-07
- * @author  PHAN DANG DANH
- * @website https://hala.edu.vn/
+ * @author Nguyen Van Thanh
+ * @website https://github.com/Thanhlearningcode
  ***************************************************************************/
 #include "kernel.h"
 //khai bao so luong thread
@@ -49,9 +49,9 @@ void osKernelStackInit(int i){
  * @details Ket noi cac thread thong qua nextPt, dieu huong con tro Pc
  * 					toi ham duoc goi, khoi tao Stack cho tung thread, chon thread
  * 					duoc khoi chay dau tien		
- * @param   void (*task0)(void) con tro toi task0 khong nhan tham so v‡ co kieu tra ve l‡ void.
- * @param   void (*task1)(void) con tro toi task1 khong nhan tham so v‡ co kieu tra ve l‡ void.
- * @param   void (*task2)(void) con tro toi task2 khong nhan tham so v‡ co kieu tra ve l‡ void.
+ * @param   void (*task0)(void) con tro toi task0 khong nhan tham so v√† co kieu tra ve l√† void.
+ * @param   void (*task1)(void) con tro toi task1 khong nhan tham so v√† co kieu tra ve l√† void.
+ * @param   void (*task2)(void) con tro toi task2 khong nhan tham so v√† co kieu tra ve l√† void.
  * @return  True
  **************************************************************************************/
 uint8_t osKernelAddThread(void (*task0)(void),void (*task1)(void),void (*task2)(void)){
