@@ -1,11 +1,11 @@
 /***************************************************************************
  * @file    kernel.h
- * @brief   Khai b·o c·c h‡m va cau truc lien quan toi kernel
- * @details File n‡y cung cap giao dien cho viec dieu khien kernel
+ * @brief   Khai b√°o c√°c h√†m va cau truc lien quan toi kernel
+ * @details File n√†y cung cap giao dien cho viec dieu khien kernel
  * @version 1.0
  * @date    2024-10-07
- * @author  PHAN DANG DANH
- * @website https://hala.edu.vn/
+ * @author Nguyen Van Thanh
+ * @website https://github.com/Thanhlearningcode
  ***************************************************************************/
 #ifndef KERNEL_H
 #define KERNEL_H
