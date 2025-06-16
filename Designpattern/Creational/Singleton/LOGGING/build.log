@@ -1,0 +1,33 @@
+===============================
+Build started at: 2025-06-14 11:37:14
+===============================
+
+Running make in: /home/thanh/Project/Baitap_Aphong/02.Designpattern/Creational/Singleton
+[Compiling root] main.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -DSTM32F411xE -O2 -g -Wall -ffunction-sections -fdata-sections -IInc -ICMSIS/Device/ST/STM32F4xx/Include -ICMSIS/Include -c main.c -o build/main.o
+[Compiling] Src/Adc.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -DSTM32F411xE -O2 -g -Wall -ffunction-sections -fdata-sections -IInc -ICMSIS/Device/ST/STM32F4xx/Include -ICMSIS/Include -c Src/Adc.c -o build/Adc.o
+[Compiling] Src/SensorManager_Singleton.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -DSTM32F411xE -O2 -g -Wall -ffunction-sections -fdata-sections -IInc -ICMSIS/Device/ST/STM32F4xx/Include -ICMSIS/Include -c Src/SensorManager_Singleton.c -o build/SensorManager_Singleton.o
+[Compiling] Src/syscalls.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -DSTM32F411xE -O2 -g -Wall -ffunction-sections -fdata-sections -IInc -ICMSIS/Device/ST/STM32F4xx/Include -ICMSIS/Include -c Src/syscalls.c -o build/syscalls.o
+[Compiling] Src/Uart_Builder.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -DSTM32F411xE -O2 -g -Wall -ffunction-sections -fdata-sections -IInc -ICMSIS/Device/ST/STM32F4xx/Include -ICMSIS/Include -c Src/Uart_Builder.c -o build/Uart_Builder.o
+[Compiling] Src/Uart_Driver.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -DSTM32F411xE -O2 -g -Wall -ffunction-sections -fdata-sections -IInc -ICMSIS/Device/ST/STM32F4xx/Include -ICMSIS/Include -c Src/Uart_Driver.c -o build/Uart_Driver.o
+[CMSIS] CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -DSTM32F411xE -O2 -g -Wall -ffunction-sections -fdata-sections -IInc -ICMSIS/Device/ST/STM32F4xx/Include -ICMSIS/Include -c CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c -o build/system_stm32f4xx.o
+[Assembling] Startup/startup_stm32f411vetx.s
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb Startup/startup_stm32f411vetx.s -o build/startup_stm32f411vetx.o
+[Linking] build/STM32F411.elf
+arm-none-eabi-gcc -TStartup/STM32F411VETX_FLASH.ld -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wl,--gc-sections -Wl,-Map=build/STM32F411.map build/main.o build/Adc.o build/SensorManager_Singleton.o build/syscalls.o build/Uart_Builder.o build/Uart_Driver.o build/system_stm32f4xx.o build/startup_stm32f411vetx.o -o build/STM32F411.elf
+arm-none-eabi-size build/STM32F411.elf
+   text	   data	    bss	    dec	    hex	filename
+  34748	   2476	   1628	  38852	   97c4	build/STM32F411.elf
+[Objcopy] build/STM32F411.bin
+arm-none-eabi-objcopy -O binary build/STM32F411.elf build/STM32F411.bin
+
+ Build completed successfully!
+Completed at: 2025-06-14 11:37:15
+Build started by: THANH
+===============================

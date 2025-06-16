@@ -1,0 +1,23 @@
+===============================
+Build started at: 2025-06-14 11:39:46
+===============================
+
+Running make in: /home/thanh/Project/Baitap_Aphong/02.Designpattern/Creational/Factory
+[Compiling root] main.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -DSTM32F411xE -O2 -g -Wall -ffunction-sections -fdata-sections -IInc -ICMSIS/Device/ST/STM32F4xx/Include -ICMSIS/Include -c main.c -o build/main.o
+main.c: In function 'main':
+main.c:7:13: warning: unused variable 'tempSensor' [-Wunused-variable]
+    7 |     Sensor* tempSensor = createSensor(SENSOR_TEMPERATURE);
+      |             ^~~~~~~~~~
+[Linking] build/STM32F411.elf
+arm-none-eabi-gcc -TStartup/STM32F411VETX_FLASH.ld -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wl,--gc-sections -Wl,-Map=build/STM32F411.map build/main.o build/Adc_Builder.o build/Adc.o build/Sensor_Factory.o build/syscalls.o build/Tempsensor.o build/system_stm32f4xx.o build/startup_stm32f411vetx.o -o build/STM32F411.elf
+arm-none-eabi-size build/STM32F411.elf
+   text	   data	    bss	    dec	    hex	filename
+   3660	   2112	   1632	   7404	   1cec	build/STM32F411.elf
+[Objcopy] build/STM32F411.bin
+arm-none-eabi-objcopy -O binary build/STM32F411.elf build/STM32F411.bin
+
+ Build completed successfully!
+Completed at: 2025-06-14 11:39:46
+Build started by: THANH
+===============================

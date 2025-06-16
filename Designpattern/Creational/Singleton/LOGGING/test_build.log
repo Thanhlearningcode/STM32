@@ -1,0 +1,56 @@
+===============================
+Test Build started at: 2025-05-29 19:59:01
+===============================
+
+🔨 Running cmake and make...
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build
+/usr/bin/cmake -S/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests -B/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build/CMakeFiles /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build'
+make  -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/depend
+make[2]: Entering directory '/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build'
+cd /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build/_deps/googletest-src/googletest /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build/_deps/googletest-build/googletest /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake --color=
+Dependencies file "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d" is newer than depends file "/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target gtest
+make[2]: Leaving directory '/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build'
+make  -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
+make[2]: Entering directory '/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build'
+make[2]: Nothing to be done for '_deps/googletest-build/googletest/CMakeFiles/gtest.dir/build'.
+make[2]: Leaving directory '/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build'
+[ 18%] Built target gtest
+make  -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
+make[2]: Entering directory '/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build'
+cd /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build/_deps/googletest-src/googletest /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build/_deps/googletest-build/googletest /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake --color=
+Dependencies file "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d" is newer than depends file "/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target gtest_main
+make[2]: Leaving directory '/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build'
+make  -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+make[2]: Entering directory '/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build'
+make[2]: Nothing to be done for '_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build'.
+make[2]: Leaving directory '/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build'
+[ 36%] Built target gtest_main
+make  -f CMakeFiles/Sensor_Singleton_test.dir/build.make CMakeFiles/Sensor_Singleton_test.dir/depend
+make[2]: Entering directory '/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build'
+cd /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build/CMakeFiles/Sensor_Singleton_test.dir/DependInfo.cmake --color=
+Dependencies file "CMakeFiles/Sensor_Singleton_test.dir/Sensor_Singleton_test.cpp.o.d" is newer than depends file "/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build/CMakeFiles/Sensor_Singleton_test.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target Sensor_Singleton_test
+make[2]: Leaving directory '/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build'
+make  -f CMakeFiles/Sensor_Singleton_test.dir/build.make CMakeFiles/Sensor_Singleton_test.dir/build
+make[2]: Entering directory '/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build'
+[ 45%] Building C object CMakeFiles/Sensor_Singleton_test.dir/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/Src/SensorManager_Singleton.c.o
+/usr/bin/cc  -I/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/../Inc -isystem /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build/_deps/googletest-src/googletest/include -isystem /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build/_deps/googletest-src/googletest  -MD -MT CMakeFiles/Sensor_Singleton_test.dir/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/Src/SensorManager_Singleton.c.o -MF CMakeFiles/Sensor_Singleton_test.dir/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/Src/SensorManager_Singleton.c.o.d -o CMakeFiles/Sensor_Singleton_test.dir/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/Src/SensorManager_Singleton.c.o -c /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/Src/SensorManager_Singleton.c
+In file included from /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/Src/SensorManager_Singleton.c:3:
+/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/../Inc/Uart_Driver.h:5:10: fatal error: stm32f4xx.h: No such file or directory
+    5 | #include "stm32f4xx.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/Sensor_Singleton_test.dir/build.make:90: CMakeFiles/Sensor_Singleton_test.dir/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/Src/SensorManager_Singleton.c.o] Error 1
+make[2]: Leaving directory '/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build'
+make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/Sensor_Singleton_test.dir/all] Error 2
+make[1]: Leaving directory '/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build'
+make: *** [Makefile:146: all] Error 2
+✅ Build completed successfully!
+❌ Test binary Sensor_Singleton_test not found or not executable!
