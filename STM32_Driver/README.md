@@ -1,6 +1,6 @@
-# ⚙️ STM32F1 Low-Level Driver Library – Pure C (Keil C)
+# ⚙️ STM32F1&F4 Low-Level Driver Library – Pure C (Keil C)
 
-Chào mừng đến với dự án **STM32F1 Driver Library**, nơi bạn có thể tìm thấy những thư viện **tự xây từ thanh ghi (register-level)** dành riêng cho vi điều khiển STM32F1.  
+Chào mừng đến với dự án **STM32F1&F4 Driver Library**, nơi bạn có thể tìm thấy những thư viện **tự xây từ thanh ghi (register-level)** dành riêng cho vi điều khiển STM32F1&F4.  
 Tất cả được lập trình bằng **ngôn ngữ C thuần**, biên dịch trực tiếp trong **Keil µVision**, **không phụ thuộc HAL hoặc thư viện trung gian**.
 
 ---
