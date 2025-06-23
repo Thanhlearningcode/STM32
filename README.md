@@ -15,16 +15,18 @@ Dự án được tổ chức theo hướng **clean architecture**, tập trung 
 | `RTOS/` | Kernel RTOS tự viết hỗ trợ task scheduling và communication cơ bản |
 | `STM32F1_Driver/` | Bộ driver đầy đủ cho STM32F1 (GPIO, Timer, UART, ...) |
 | `STM32F4_Driver/` | Bộ driver đầy đủ cho STM32F4 |
+| `VirtualSTM32/` | Mô phỏng phần cứng STM32 bằng C++, hỗ trợ test với Python, bash script |
 
 ---
 
 ## 🧠 Tính năng nổi bật
 
 - 🧩 Tích hợp các **Design Pattern** (Builder, Factory, Adapter...) tối ưu cho nhúng  
-- ⚙️ Viết **driver cấp thanh ghi**, không dùng HAL  
+- ⚙️ Viết **driver cấp thanh ghi**, không dùng HAL, and no IDE
 - ⏱️ RTOS đơn giản hỗ trợ multitask  
 - 🧪 Thiết kế chuẩn để viết **unit test**, dễ tái sử dụng  
-- 💡 Hỗ trợ **CMSIS & Assembly** để điều khiển tối ưu
+- 💡 Hỗ trợ **CMSIS & Assembly** để điều khiển tối ưu  
+- 🧪 **Virtual hóa STM32** hỗ trợ mô phỏng logic và kiểm thử không cần phần cứng
 
 ---
 
@@ -38,3 +40,5 @@ Dự án được tổ chức theo hướng **clean architecture**, tập trung 
 ## 👨‍💻 Tác giả
 
 Dự án được phát triển bởi **Thanhlearningcode** — nền tảng thực hành lâu dài cho nghiên cứu về kiến trúc phần mềm nhúng, driver và RTOS.
+
+---
