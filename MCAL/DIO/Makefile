@@ -1,7 +1,7 @@
 # Makefile để build dự án Blink LED cho STM32F103 (no HAL/SPL)
 
 # Tên file đầu ra
-TARGET = PORT
+TARGET = DIO
 BUILD_DIR = build
 
 
@@ -14,7 +14,6 @@ CONF_DIR = Automotive/Config
 
 # Include Paths
 INCLUDES = -I$(MCAL_DIR)/DIO/Inc \
-		   -I$(MCAL_DIR)/PORT/Inc \
            -I$(SPL_DIR)/Inc \
 		   -ICore \
            -I$(COMM_DIR)/Inc \
@@ -22,9 +21,7 @@ INCLUDES = -I$(MCAL_DIR)/DIO/Inc \
 
 # Danh sách file nguồn
 DIO_SOURCES = $(wildcard $(MCAL_DIR)/DIO/Src/*.c)
-PORT_SOURCES = $(wildcard $(MCAL_DIR)/PORT/Src/*.c)
-BSW_SOURCES = $(DIO_SOURCES) $(PORT_SOURCES)
-
+BSW_SOURCES = $(DIO_SOURCES) 
 SPL_SOURCES = $(wildcard $(SPL_DIR)/Src/*.c)
 SRCS_C  = main.c $(BSW_SOURCES) $(SPL_SOURCES) 
 SRCS_S  = startup_stm32f103.s
@@ -84,7 +81,7 @@ flash: $(BUILD_DIR)/$(TARGET).bin
 
 # ✅ CHANGE: Clean build directory
 clean:
-	rm -rf $(BUILD_DIR)/*
+	rm -rf $(BUILD_DIR)
 
 # Add hex target
 hex: $(BUILD_DIR)/$(TARGET).hex
