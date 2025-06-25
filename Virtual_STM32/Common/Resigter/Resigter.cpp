@@ -1,13 +1,13 @@
-#include "Register.h"
+#include "Resigter.h"
 
 Bit_Config::Bit_Config ()
 {
-    this->Bit_Name   = "";
-    this->Start_Addr = 0;
-    this->End_Addr   = 0;
+    this->Bit_Name   = BIT_NAME_DEFAULT;
+    this->Start_Addr = Bit_Default;
+    this->End_Addr   = Bit_Default;
     this->Permit     = e_Permit::ReadWrite;
-    this->Init_Val   = 0;
-    this->Data       = 0;
+    this->Init_Val   = Bit_Default;
+    this->Data       = Bit_Default;
 }
 
 Bit_Config::Bit_Config (const char* _name, uint32_t start_addr, uint32_t end_addr,
@@ -20,7 +20,11 @@ Bit_Config::Bit_Config (const char* _name, uint32_t start_addr, uint32_t end_add
     this->Init_Val   = init;
     this->Data       = data;
 }
-
+Resigter::Resigter(const char* name, uint32_t offset)
+{
+    Resigter_Name = name;
+;    Offset = offset;
+}
 Bit_Config& Bit_Config::operator = (unsigned int val)
 {
     uint32_t mask = (uint32_t)((1 << (this->End_Addr - this->Start_Addr + 1)) - 1);
@@ -71,7 +75,7 @@ Bit_Config& Resigter::operator[] (const char* name)
 Resigter::operator unsigned int () const
 {
     uint32_t data = 0;
-    for(size_t i=0;i<Bitset.size();i++)
+    for (size_t i=0;i<Bitset.size();i++)
     {
         uint32_t bit_val = Bitset.at(i)->Data;
         data |= (bit_val << Bitset.at(i)->Start_Addr);
@@ -81,7 +85,7 @@ Resigter::operator unsigned int () const
 
 Resigter& Resigter::operator = (unsigned int data)
 {
-    for(size_t i=0;i<Bitset.size();i++)
+    for (size_t i=0;i<Bitset.size();i++)
     {
         *(Bitset.at(i)) = data >> Bitset.at(i)->Start_Addr;
     }
@@ -90,7 +94,7 @@ Resigter& Resigter::operator = (unsigned int data)
 
 Resigter::~Resigter()
 {
-    for(size_t i=0;i<Bitset.size();i++)
+    for (size_t i=0;i<Bitset.size();i++)
     {
         delete Bitset.at(i);
     }

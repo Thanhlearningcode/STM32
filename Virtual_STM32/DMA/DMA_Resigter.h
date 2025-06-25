@@ -1,8 +1,17 @@
 #pragma once
 
-#include "Register.h"
+#include "Resigter.h"
 #include <map>
 #include <memory>
+
+struct DMA_RegisterOffset 
+{
+    static constexpr uint32_t CCR   = 0x08;
+    static constexpr uint32_t CNDTR = 0x0C;
+    static constexpr uint32_t CPAR  = 0x10;
+    static constexpr uint32_t CMAR  = 0x14;
+};
+
 class DMA;
 class DMA_Resigter
 {
@@ -14,7 +23,7 @@ private:
     Resigter* DMA_CMAR;
     Resigter* DMA_CPAR;
     Resigter* DMA_CNDTR;
-
+public:
     DMA_Resigter (const char* name);
     ~DMA_Resigter();
 

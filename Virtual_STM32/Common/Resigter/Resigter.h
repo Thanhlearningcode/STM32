@@ -5,6 +5,13 @@
 #include <vector>
 #include <string.h>
 
+constexpr const char* BIT_NAME_DEFAULT = "";
+
+typedef enum 
+{
+    Bit_Default = 0,
+} Bit_State;
+
 typedef enum 
 {
     ReadWrite = 0,
