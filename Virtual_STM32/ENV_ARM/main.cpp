@@ -1,8 +1,8 @@
 #include "DMA.h"
 #include "DMA_Resigter.h"
 #include <iostream>
-#include <iomanip>  
-
+#include <iomanip>
+#include <memory>
 class CPU : public Master 
 {
 public:
@@ -11,8 +11,8 @@ public:
 
 int main(int argc, char* argv[]) 
 {
-    DMA* dma = new DMA("DMA");
-    CPU* cpu = new CPU("CPU");
+    std::unique_ptr<DMA> dma = std::make_unique<DMA>("DMA");
+    std::unique_ptr<CPU> cpu = std::make_unique<CPU>("CPU");
 
     (*cpu)(*dma);
 
@@ -29,23 +29,43 @@ int main(int argc, char* argv[])
     std::cout << "Sending data to DMA...\n";
     cpu->Transmit(&data);
 
-  
     std::cout << "Data buffer sent: ";
     for (unsigned int i = 0; i < data.Length; ++i) 
     {
-        std::cout << "0x" 
-                  << std::uppercase 
-                  << std::hex 
-                  << std::setw(2) 
-                  << std::setfill('0') 
-                  << static_cast<int>(data.Buffer[i]) 
+        std::cout << "0x"
+                  << std::uppercase
+                  << std::hex
+                  << std::setw(2)
+                  << std::setfill('0')
+                  << static_cast<int>(data.Buffer[i])
                   << " ";
     }
-    std::cout << std::dec << std::endl;  // reset về hệ thập phân
+    std::cout << std::dec << std::endl;
 
+    Data_Package received;
+    received.Address = data.Address;
+    received.Length  = data.Length;
+    received.Buffer  = new uint8_t[received.Length];
+
+    dma->Received(&received);  // đọc lại từ thanh ghi
+
+    std::cout << "Data received from DMA register: ";
+    for (unsigned int i = 0; i < received.Length; ++i) 
+    {
+        std::cout << "0x"
+                  << std::uppercase
+                  << std::hex
+                  << std::setw(2)
+                  << std::setfill('0')
+                  << static_cast<int>(received.Buffer[i])
+                  << " ";
+    }
+    std::cout << std::dec << std::endl;
+
+    
     delete[] data.Buffer;
-    delete dma;
-    delete cpu;
+    delete[] received.Buffer;
+
 
     return 0;
 }
