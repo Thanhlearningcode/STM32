@@ -3,6 +3,7 @@
 #include <iostream>
 #include <iomanip>
 #include <memory>
+
 class CPU : public Master 
 {
 public:
