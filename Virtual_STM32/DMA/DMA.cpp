@@ -1,6 +1,10 @@
 #include "DMA.h"
 #include <memory>
 
+#include "Timer.h"
+#include "I2C.h"
+#include "SPI.h"
+
 DMA::DMA(const char* name) : Master(name), Slave(name)
 {
     std::string reg_name(name);

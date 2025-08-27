@@ -4,6 +4,14 @@
 #include "BusInterface.h"
 #include "Port.h"
 
+#include "Uart.h"
+
+#include "Timer.h"
+#include "I2C.h"
+#include "SPI.h"
+
+#include "CAN.h"
+
 class DMA : public Master , public Slave 
 {
 private:
