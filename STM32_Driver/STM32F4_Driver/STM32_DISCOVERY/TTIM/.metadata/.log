@@ -1,0 +1,56 @@
+!SESSION 2024-08-15 20:30:58.526 -----------------------------------------------
+eclipse.buildId=Version 1.14.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-15 20:31:57.704
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-15 20:31:57.709
+!MESSAGE Log4j2 initialized with config file D:\Target fresher Embedded\Lib_STM32F4\STM32_DISCOVERY\TTIM\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-15 20:32:01.814
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-15 20:33:45.140
+!MESSAGE Indexed 'TIM' (19 sources, 81 headers) in 4.19 sec: 4,294 declarations; 18,106 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0089%)
+!SESSION 2024-08-17 00:27:21.096 -----------------------------------------------
+eclipse.buildId=Version 1.14.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  D:\Target fresher Embedded\Lib_STM32F4\STM32_DISCOVERY\TTIM\TIM\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 D:\Target fresher Embedded\Lib_STM32F4\STM32_DISCOVERY\TTIM\TIM\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-17 00:27:37.024
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-17 00:27:37.029
+!MESSAGE Log4j2 initialized with config file D:\Target fresher Embedded\Lib_STM32F4\STM32_DISCOVERY\TTIM\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-17 00:27:40.911
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-17 00:27:42.226
+!MESSAGE Indexed 'TIM' (21 sources, 81 headers) in 1.23 sec: 4,303 declarations; 18,204 references; 0 unresolved inclusions; 1 syntax errors; 3 unresolved names (0.013%)
+!SESSION 2024-08-17 00:49:30.604 -----------------------------------------------
+eclipse.buildId=Version 1.14.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  D:\Target fresher Embedded\Lib_STM32F4\STM32_DISCOVERY\EXTI\EXTI1\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 D:\Target fresher Embedded\Lib_STM32F4\STM32_DISCOVERY\EXTI\EXTI1\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-17 00:49:37.251
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-17 00:49:37.252
+!MESSAGE Log4j2 initialized with config file D:\Target fresher Embedded\Lib_STM32F4\STM32_DISCOVERY\TTIM\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-17 00:49:47.194
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-17 00:49:51.098
+!MESSAGE Indexed 'EXTI1' (21 sources, 116 headers) in 3.5 sec: 10,760 declarations; 35,220 references; 5 unresolved inclusions; 890 syntax errors; 1,048 unresolved names (2.2%)

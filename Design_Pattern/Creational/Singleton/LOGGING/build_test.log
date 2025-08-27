@@ -1,0 +1,46 @@
+===============================
+Test build started at: 2025-06-01 12:47:38
+===============================
+
+Running cmake and make...
+Old CMake cache found. Cleaning build directory to avoid conflict.
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/build
+[  9%] Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 18%] Linking CXX static library ../../../lib/libgtest.a
+[ 18%] Built target gtest
+[ 27%] Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 36%] Linking CXX static library ../../../lib/libgtest_main.a
+[ 36%] Built target gtest_main
+[ 45%] Building CXX object CMakeFiles/Sensor_Singleton_test.dir/Sensor_Singleton_test.cpp.o
+[ 54%] Building C object CMakeFiles/Sensor_Singleton_test.dir/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/Src/SensorManager_Singleton.c.o
+In file included from /home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/Src/SensorManager_Singleton.c:3:
+/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/tests/../Inc/Uart_Driver.h:5:10: fatal error: stm32f4xx.h: No such file or directory
+    5 | #include "stm32f4xx.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/Sensor_Singleton_test.dir/build.make:90: CMakeFiles/Sensor_Singleton_test.dir/home/thanh/Project/Baitap_Aphong/02.Designpattern/Singleton/Src/SensorManager_Singleton.c.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/Sensor_Singleton_test.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2
+
+Make failed!
+===============================

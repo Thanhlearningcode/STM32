@@ -1,0 +1,17 @@
+-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c
+-fno-rtti -funsigned-char -fshort-enums -fshort-wchar
+-D__RTX -D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality 
+-I./RTE/CMSIS
+-I./RTE/Compiler
+-I./RTE/_Target_1
+-I"D:/Keli C/ARM/CMSIS/5.7.0/CMSIS/Core/Include"
+-I"D:/Keli C/ARM/CMSIS/5.7.0/CMSIS/RTOS2/Include"
+-I"D:/Keli C/ARM/CMSIS/5.7.0/CMSIS/RTOS2/RTX/Include"
+-I"D:/Keli C/Keil/ARM_Compiler/1.6.3/Include"
+-I"D:/Keli C/Keil/MDK-Middleware/7.11.1/FileSystem/Include"
+-I"D:/Keli C/Keil/MDK-Middleware/7.11.1/emWin/Include"
+-I"D:/Keli C/Keil/STM32F4xx_DFP/2.17.1/Drivers/BSP/STM32469I-Discovery"
+-I"D:/Keli C/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include"
+-I"D:/Keli C/Keil/STM32F4xx_DFP/2.17.1/Drivers/STM32F4xx_HAL_Driver/Inc"
+-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F411xE -D_RTE_  -include "Pre_Include_Global.h"
+-o ./objects/main.o -MD "main.c"
